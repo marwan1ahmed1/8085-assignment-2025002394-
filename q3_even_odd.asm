@@ -1,0 +1,26 @@
+; Name: Marwan Ahmed Farouk
+; Student ID: 2025002394
+; Section: <Your Section/Group>
+; Question: Q3 Count Even and Odd Numbers
+
+LXI H, 2500H
+MOV C, M
+MVI D, 00H
+MVI E, 00H
+LOOP_START:
+INX H
+MOV A, M
+ANI 01H
+JZ IS_EVEN
+INR E
+JMP NEXT_ITER
+IS_EVEN:
+INR D
+NEXT_ITER:
+DCR C
+JNZ LOOP_START
+MOV A, D
+STA 2600H
+MOV A, E
+STA 2601H
+HLT
