@@ -1,6 +1,6 @@
 ; Name: Marwan Ahmed Farouk
 ; Student ID: 2025002394
-; Section: <Your Section/Group>
+; Section: 3
 ; Question: Q3 Count Even and Odd Numbers
 
 LXI H, 2500H
